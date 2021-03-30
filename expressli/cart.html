@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <title>Корзина</title>
+    <meta charset="UTF-8">
+    <meta name="description" content=" Divisima | eCommerce Template">
+    <meta name="keywords" content="divisima, eCommerce, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="shortcut icon" />
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,300i,400,400i,700,700i" rel="stylesheet">
+
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/flaticon.css" />
+    <link rel="stylesheet" href="css/slicknav.min.css" />
+    <link rel="stylesheet" href="css/jquery-ui.min.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+
+    <!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header section -->
+    <header class="header-section">
+        <div class="header-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2 text-center text-lg-left">
+                        <!-- logo -->
+                        <a href="./index.html" class="site-logo">
+                            <img src="img/logoooo.png" alt="">
+                        </a>
+                    </div>
+                    <div class="col-xl-6 col-lg-5">
+                        <form class="header-search-form">
+                            <input type="text" placeholder="Поиск на сайте...">
+                            <button><i class="flaticon-search"></i></button>
+                        </form>
+                    </div>
+                    <div class="col-xl-4 col-lg-5">
+                        <div class="user-panel">
+                            <div class="up-item">
+                                <i class="flaticon-profile"></i>
+                                <a href="#">Войти</a> или <a href="#">Зарегистрироваться</a>
+                            </div>
+                            <div class="up-item">
+                                <div class="shopping-card">
+                                    <i class="flaticon-bag"></i>
+                                    <span>0</span>
+                                </div>
+                                <a href="#">Корзина</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="main-navbar">
+            <div class="container">
+                <!-- menu -->
+                <ul class="main-menu">
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Мужское</a></li>
+                    <li><a href="#">Женское</a></li>
+                    <li><a href="#">Ювелирные украшения
+						<span class="new">New</span>
+					</a></li>
+                    <li><a href="#">Обувь</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">Кроссовкиs</a></li>
+                            <li><a href="#">Туфли</a></li>
+                            <li><a href="#">Сандали</a></li>
+                            <li><a href="#">Ботинки</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Страницы</a>
+                        <ul class="sub-menu">
+                            <li><a href="./product.html">Страница товара</a></li>
+                            <li><a href="./category.html">Страница категорий</a></li>
+                            <li><a href="./cart.html">Страница корзины</a></li>
+                            <li><a href="./checkout.html">Страница платежа</a></li>
+                            <li><a href="./contact.html">Страница контактов</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Блог</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- Header section end -->
+
+
+    <!-- Page info -->
+    <div class="page-top-info">
+        <div class="container">
+            <h4>Корзина</h4>
+            <div class="site-pagination">
+                <a href="">Главная</a> /
+                <a href="">Корзина</a>
+            </div>
+        </div>
+    </div>
+    <!-- Page info end -->
+
+
+    <!-- cart section end -->
+    <section class="cart-section spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="cart-table">
+                        <h3>Ваша корзина</h3>
+                        <div class="cart-table-warp">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th class="product-th">Товар</th>
+                                        <th class="quy-th">Кол-во</th>
+                                        <th class="size-th">Размер</th>
+                                        <th class="total-th">Цена</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="product-col">
+                                            <img src="img/cart/1.jpg" alt="">
+                                            <div class="pc-title">
+                                                <h4>Animal Print Dress</h4>
+                                                <p>$45.90</p>
+                                            </div>
+                                        </td>
+                                        <td class="quy-col">
+                                            <div class="quantity">
+                                                <div class="pro-qty">
+                                                    <input type="text" value="1">
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="size-col">
+                                            <h4>Size M</h4>
+                                        </td>
+                                        <td class="total-col">
+                                            <h4>$45.90</h4>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="product-col">
+                                            <img src="img/cart/2.jpg" alt="">
+                                            <div class="pc-title">
+                                                <h4>Ruffle Pink Top</h4>
+                                                <p>$45.90</p>
+                                            </div>
+                                        </td>
+                                        <td class="quy-col">
+                                            <div class="quantity">
+                                                <div class="pro-qty">
+                                                    <input type="text" value="1">
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="size-col">
+                                            <h4>Size M</h4>
+                                        </td>
+                                        <td class="total-col">
+                                            <h4>$45.90</h4>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="product-col">
+                                            <img src="img/cart/3.jpg" alt="">
+                                            <div class="pc-title">
+                                                <h4>Skinny Jeans</h4>
+                                                <p>$45.90</p>
+                                            </div>
+                                        </td>
+                                        <td class="quy-col">
+                                            <div class="quantity">
+                                                <div class="pro-qty">
+                                                    <input type="text" value="1">
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="size-col">
+                                            <h4>Size M</h4>
+                                        </td>
+                                        <td class="total-col">
+                                            <h4>$45.90</h4>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="total-cost">
+                            <h6>Всего <span>$99.90</span></h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 card-right">
+                    <form class="promo-code-form">
+                        <input type="text" placeholder="Введите промокод...">
+                        <button>Ввести</button>
+                    </form>
+                    <a href="" class="site-btn">Оплатить</a>
+                    <a href="" class="site-btn sb-dark">Выбрать еще</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- cart section end -->
+
+    <!-- Related product section -->
+    <section class="related-product-section">
+        <div class="container">
+            <div class="section-title text-uppercase">
+                <h2>Выбрать еще</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="product-item">
+                        <div class="pi-pic">
+                            <div class="tag-new">New</div>
+                            <img src="./img/product/2.jpg" alt="">
+                            <div class="pi-links">
+                                <a href="#" class="add-card"><i class="flaticon-bag"></i><span>В корзину</span></a>
+                                <a href="#" class="wishlist-btn"><i class="flaticon-heart"></i></a>
+                            </div>
+                        </div>
+                        <div class="pi-text">
+                            <h6>$35,00</h6>
+                            <p>Black and White Stripes Dress</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="product-item">
+                        <div class="pi-pic">
+                            <img src="./img/product/5.jpg" alt="">
+                            <div class="pi-links">
+                                <a href="#" class="add-card"><i class="flaticon-bag"></i><span>В корзину</span></a>
+                                <a href="#" class="wishlist-btn"><i class="flaticon-heart"></i></a>
+                            </div>
+                        </div>
+                        <div class="pi-text">
+                            <h6>$35,00</h6>
+                            <p>Flamboyant Pink Top </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="product-item">
+                        <div class="pi-pic">
+                            <img src="./img/product/9.jpg" alt="">
+                            <div class="pi-links">
+                                <a href="#" class="add-card"><i class="flaticon-bag"></i><span>В корзину</span></a>
+                                <a href="#" class="wishlist-btn"><i class="flaticon-heart"></i></a>
+                            </div>
+                        </div>
+                        <div class="pi-text">
+                            <h6>$35,00</h6>
+                            <p>Flamboyant Pink Top </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="product-item">
+                        <div class="pi-pic">
+                            <img src="./img/product/1.jpg" alt="">
+                            <div class="pi-links">
+                                <a href="#" class="add-card"><i class="flaticon-bag"></i><span>В корзину</span></a>
+                                <a href="#" class="wishlist-btn"><i class="flaticon-heart"></i></a>
+                            </div>
+                        </div>
+                        <div class="pi-text">
+                            <h6>$35,00</h6>
+                            <p>Flamboyant Pink Top </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Related product section end -->
+
+
+
+    <!-- Footer section -->
+    <section class="footer-section">
+        <div class="container">
+            <div class="footer-logo text-center">
+                <a href="index.html"><img src="./img/logoLightNew.png" alt=""></a>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="footer-widget about-widget">
+                        <h2>О нас</h2>
+                        <p>Самое важное — сделать хоть что-то для достижения успеха, и сделать это прямо сейчас. Это и есть самый главный секрет - несмотря на всю свою простоту. Потрясающие идеи есть у каждого, но редко кто делает хоть что-то, чтобы воплотить
+                            их на практике, причем прямо сейчас. Не завтра. Не через неделю. Сейчас.</p>
+                        <img src="img/cards.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="footer-widget about-widget">
+                        <h2>Ссылки</h2>
+                        <ul>
+                            <li><a href="">О нас</a></li>
+                            <li><a href="">Возврат</a></li>
+                            <li><a href="">Работа</a></li>
+                            <li><a href="">Блог</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="">Партнеры</a></li>
+                            <li><a href="">Поддержка</a></li>
+                            <li><a href="">Товары</a></li>
+                            <li><a href="">Контакты</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="footer-widget about-widget">
+                        <h2>Блог</h2>
+                        <div class="fw-latest-post-widget">
+                            <div class="lp-item">
+                                <div class="lp-thumb set-bg" data-setbg="img/blog-thumbs/1.jpg"></div>
+                                <div class="lp-content">
+                                    <h6>Что носить?</h6>
+                                    <span>Окт 21, 2018</span>
+                                    <a href="#" class="readmore">Читать</a>
+                                </div>
+                            </div>
+                            <div class="lp-item">
+                                <div class="lp-thumb set-bg" data-setbg="img/blog-thumbs/2.jpg"></div>
+                                <div class="lp-content">
+                                    <h6>Тренды этого года</h6>
+                                    <span>Окт 21, 2018</span>
+                                    <a href="#" class="readmore">Читать</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="footer-widget contact-widget">
+                        <h2>Контакты</h2>
+                        <div class="con-info">
+                            <span>C.</span>
+                            <p>Название компании </p>
+                        </div>
+                        <div class="con-info">
+                            <span>B.</span>
+                            <p>Адрес </p>
+                        </div>
+                        <div class="con-info">
+                            <span>T.</span>
+                            <p>+380 71 533 45 33</p>
+                        </div>
+                        <div class="con-info">
+                            <span>E.</span>
+                            <p>office@youremail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="social-links-warp">
+            <div class="container">
+                <div class="social-links">
+                    <a href="" class="instagram"><i class="fa fa-instagram"></i><span>instagram</span></a>
+                    <a href="" class="google-plus"><i class="fa fa-google-plus"></i><span>g+plus</span></a>
+                    <a href="" class="pinterest"><i class="fa fa-pinterest"></i><span>pinterest</span></a>
+                    <a href="" class="facebook"><i class="fa fa-facebook"></i><span>facebook</span></a>
+                    <a href="" class="twitter"><i class="fa fa-twitter"></i><span>twitter</span></a>
+                    <a href="" class="youtube"><i class="fa fa-youtube"></i><span>youtube</span></a>
+                    <a href="" class="tumblr"><i class="fa fa-tumblr-square"></i><span>tumblr</span></a>
+                </div>
+
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                <p class="text-white text-center mt-5">
+                    <script>
+                        document.write(new Date().getFullYear());
+                    </script> <i class="fa fa-heart-o" aria-hidden="true"></i>
+                    <a href="https://colorlib.com" target="_blank"></a>
+                </p>
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+
+            </div>
+        </div>
+    </section>
+    <!-- Footer section end -->
+
+
+
+    <!--====== Javascripts & Jquery ======-->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <script src="js/jquery.zoom.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
