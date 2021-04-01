@@ -934,12 +934,19 @@ ol {
     margin-bottom: 0;
 }
 
+.product-item .pi-links .hover-link {
+    height: 1px;
+    width: 1px;
+    opacity: 0;
+}
+
 
 /* -----------------------
   Product filter section
 -------------------------*/
 
 .product-filter-section {
+    padding-top: 70px;
     padding-bottom: 60px;
 }
 
@@ -2122,6 +2129,10 @@ ol {
     padding-top: 80px;
     padding-bottom: 0;
     position: relative;
+}
+
+.contact-info {
+    margin-bottom: 50px;
 }
 
 .contact-info h3 {
