@@ -11,7 +11,9 @@
     <link href="img/favicon.ico" rel="shortcut icon" />
 
     <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,300i,400,400i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
 
 
     <!-- Stylesheets -->
@@ -43,13 +45,30 @@
         <div class="header-top">
             <div class="container">
                 <div class="row">
+                    <!-- menu -->
+                    <div class="col-lg-1 ">
+                        <div class="hamburger-menu">
+                            <input id="menu__toggle" type="checkbox" />
+                            <label class="menu__btn" for="menu__toggle">
+                              <span></span>
+                            </label>
+
+                            <ul class="menu__box">
+                                <li><a class="menu__item" href="./index.html">Главная</a></li>
+                                <li><a class="menu__item" href="./product.html">Страница товара</a></li>
+                                <li><a class="menu__item" href="./category.html">Страница категорий</a></li>
+                                <li><a class="menu__item" href="./cart.html">Страница корзины</a></li>
+                                <li><a class="menu__item" href="./contact.html">Страница контактов</a></li>
+                            </ul>
+                        </div>
+                    </div>
                     <div class="col-lg-2 text-center text-lg-left">
                         <!-- logo -->
                         <a href="./index.html" class="site-logo">
                             <img src="img/logoooo.png" alt="">
                         </a>
                     </div>
-                    <div class="col-xl-6 col-lg-5">
+                    <div class="col-xl-5 col-lg-5">
                         <form class="header-search-form">
                             <input type="text" placeholder="Поиск на сайте...">
                             <button><i class="flaticon-search"></i></button>
@@ -116,11 +135,11 @@
                         <div class="col-xl-6 col-lg-7 text-white">
                             <span>Новое поступление</span>
                             <h2>denim jackets</h2>
-                            <p>Распродажа весенней коллекции 2015. Скидка 15% Идейные соображения высшего порядка, а также начало повседневной работы по формированию позиции способствует подготовки и реализации позиций, занимаемых участниками в отношении
+                            <!-- <p>Распродажа весенней коллекции 2015. Скидка 15% Идейные соображения высшего порядка, а также начало повседневной работы по формированию позиции способствует подготовки и реализации позиций, занимаемых участниками в отношении
                                 поставленных задач. Повседневная практика показывает, что сложившаяся структура организации требуют от нас анализа модели развития.
-                            </p>
-                            <a href="#" class="site-btn sb-line">Посмотреть</a>
-                            <a href="#" class="site-btn sb-white">Добавить в корзину</a>
+                            </p> -->
+                            <!-- <a href="#" class="site-btn sb-line">Посмотреть</a>
+                            <a href="#" class="site-btn sb-white">Добавить в корзину</a> -->
                         </div>
                     </div>
                     <div class="offer-card text-white">
@@ -136,11 +155,11 @@
                         <div class="col-xl-6 col-lg-7 text-white">
                             <span>Новое поступление</span>
                             <h2>jackets denim</h2>
-                            <p>Распродажа весенней коллекции 2015. Скидка 15% Идейные соображения высшего порядка, а также начало повседневной работы по формированию позиции способствует подготовки и реализации позиций, занимаемых участниками в отношении
+                            <!-- <p>Распродажа весенней коллекции 2015. Скидка 15% Идейные соображения высшего порядка, а также начало повседневной работы по формированию позиции способствует подготовки и реализации позиций, занимаемых участниками в отношении
                                 поставленных задач. Повседневная практика показывает, что сложившаяся структура организации требуют от нас анализа модели развития.
                             </p>
                             <a href="#" class="site-btn sb-line">Посмотреть</a>
-                            <a href="#" class="site-btn sb-white">Добавить в корзину</a>
+                            <a href="#" class="site-btn sb-white">Добавить в корзину</a> -->
                         </div>
                     </div>
                     <div class="offer-card text-white">
@@ -313,6 +332,7 @@
 
                 <div class="col-lg-3 col-sm-6">
                     <a class="hover-link" href="./product.html" target="_blank">
+                        <!-- SALE ITEM -->
                         <div class="product-item">
                             <div class="pi-pic">
                                 <div class="tag-sale">ON SALE</div>
@@ -323,10 +343,12 @@
                                 </div>
                             </div>
                             <div class="pi-text">
-                                <h6>3500 ₽</h6>
+                                <h6 class="product-item__sale-price">3500 ₽</h6>
+                                <h6 class="product-item__new-sale-price">2500 ₽</h6>
                                 <p>Black and White Stripes Dress</p>
                             </div>
                         </div>
+                        <!-- SALE ITEM -->
                     </a>
                 </div>
 

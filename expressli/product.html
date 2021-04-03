@@ -11,7 +11,9 @@
     <link href="img/favicon.ico" rel="shortcut icon" />
 
     <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,300i,400,400i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
 
 
     <!-- Stylesheets -->
@@ -233,16 +235,65 @@
                     </div>
                 </div>
             </div>
+
+
+
         </div>
     </section>
     <!-- product section end -->
 
+    <!-- comment section -->
+    <section class="com-section">
+        <div class="wrap-com">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="product-com">
+
+                            <div class="product-com__item">
+                                <div class="product-com__nickname">Антон</div>
+                                <div class="product-com__text">Очень классное платье, рекомендую</div>
+                                <div class="product-com__data">23.12.2021</div>
+                            </div>
+
+                            <div class="product-com__item">
+                                <div class="product-com__nickname">Анна</div>
+                                <div class="product-com__text">Мне совершенно не понравилось!!!</div>
+                                <div class="product-com__data">22.12.2021</div>
+                            </div>
+
+                            <div class="product-com__item">
+                                <div class="product-com__nickname">Саша</div>
+                                <div class="product-com__text">Ну такое, могло быть и лучше...</div>
+                                <div class="product-com__data">21.12.2021</div>
+                            </div>
+
+                            <button class="site-btn sb-line sb-dark">Загрузить еще</button>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-6 product-details">
+                        <div class="product-form-wrapper">
+                            <h4 class="product__title">Оставить комментарий</h4>
+                            <form class="product__form" action="addcom" method="post">
+
+                                <input type="text" name="username" placeholder="Ваше имя..." , required>
+                                <textarea name="text" placeholder="Текст сообщения..." maxlength="100" , required, rows="8"></textarea>
+                                <a href="#" class="form-btn">Отправить</a>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- comment section end -->
 
     <!-- RELATED PRODUCTS section -->
     <section class="related-product-section">
         <div class="container">
             <div class="section-title">
-                <h2>Просмотренные товары</h2>
+                <h2>Рекомендованные товары</h2>
             </div>
             <div class="product-slider owl-carousel">
                 <div class="item-to-link-wrapper">
