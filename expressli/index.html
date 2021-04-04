@@ -43,10 +43,10 @@
     <!-- Header section -->
     <header class="header-section">
         <div class="header-top">
-            <div class="container">
-                <div class="row">
+            <div class="container ">
+                <div class="row  ">
                     <!-- menu -->
-                    <div class="col-lg-1 ">
+                    <div class="col-lg-1 col-1">
                         <div class="hamburger-menu">
                             <input id="menu__toggle" type="checkbox" />
                             <label class="menu__btn" for="menu__toggle">
@@ -62,39 +62,44 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-lg-2 text-center text-lg-left">
+                    <div class="col-lg-2 text-center text-lg-left col-4 mt-10">
                         <!-- logo -->
-                        <a href="./index.html" class="site-logo">
-                            <img src="img/logoooo.png" alt="">
-                        </a>
+                        <div class="logo__item">
+                            <a href="./index.html" class="site-logo">
+                                <img src="img/logoooo.png" alt="">
+                            </a>
+                        </div>
                     </div>
-                    <div class="col-xl-5 col-lg-5">
+                    <div class="col-xl-5 col-lg-4  col-3 align-self-end">
                         <form class="header-search-form">
-                            <input type="text" placeholder="Поиск на сайте...">
+                            <input type="text" placeholder="">
                             <button><i class="flaticon-search"></i></button>
                         </form>
                     </div>
-                    <div class="col-xl-4 col-lg-5">
+                    <div class="col-xl-4 col-lg-5 col-4">
                         <div class="user-panel">
                             <div class="up-item">
-                                <i class="flaticon-profile"></i>
-                                <a href="#">Войти</a> или <a href="#">Зарегистрироваться</a>
+                                <a href="#"><i class="flaticon-profile"></i></a>
+                                <div class="header-item__text"><a href="#">Войти</a> или <a href="#">Зарегистрироваться</a></div>
+
                             </div>
                             <div class="up-item">
                                 <div class="shopping-card">
-                                    <i class="flaticon-bag"></i>
-                                    <span>0</span>
+                                    <a href=""><i class="flaticon-bag"></i>
+                                        <span>0</span></a>
                                 </div>
-                                <a href="#">Корзина</a>
+                                <div class="header-item__text"><a href="#">Корзина</a></div>
+
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <nav class="main-navbar">
+        <!-- <nav class="main-navbar">
             <div class="container">
-                <!-- menu -->
+
+                
                 <ul class="main-menu">
                     <li><a href="#">Главная</a></li>
                     <li><a href="#">Мужское</a></li>
@@ -120,7 +125,8 @@
                     </li>
                 </ul>
             </div>
-        </nav>
+        </nav> -->
+
     </header>
     <!-- Header section end -->
 

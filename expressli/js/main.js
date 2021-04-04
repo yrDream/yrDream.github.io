@@ -19,12 +19,24 @@ $(window).on('load', function() {
 });
 
 (function($) {
+
+    // fixed header
+
+    let header = $('.header-section');
+
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 1) {
+            header.addClass('header_fixed');
+        } else {
+            header.removeClass('header_fixed');
+        }
+    });
+
     /*------------------
     	Navigation
     --------------------*/
     $('.main-menu').slicknav({
         label: '',
-        duplicate: 'true',
         prependTo: '.main-navbar .container',
         closedSymbol: '<i class="flaticon-right-arrow"></i>',
         openedSymbol: '<i class="flaticon-down-arrow"></i>'
