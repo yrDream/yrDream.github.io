@@ -23,12 +23,18 @@ $(window).on('load', function() {
     // fixed header
 
     let header = $('.header-section');
+    let headerTop = $('.header-top');
+    let burgerButton = $('.burger-button');
 
     $(window).scroll(function() {
         if ($(this).scrollTop() > 1) {
             header.addClass('header_fixed');
+            headerTop.slideUp()
+
         } else {
             header.removeClass('header_fixed');
+            headerTop.slideDown()
+
         }
     });
 
