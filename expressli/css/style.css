@@ -393,6 +393,10 @@ ol {
     display: inline-block;
 }
 
+.logo__item--mobile {
+    display: none;
+}
+
 .header-search-form {
     width: 100%;
     position: relative;
@@ -597,6 +601,10 @@ ol {
     left: 0;
     z-index: 1;
     transition: transform .2s linear;
+}
+
+.mobile-header-section {
+    display: none;
 }
 
 
@@ -2696,7 +2704,6 @@ ol {
     .flaticon-search {
         width: 10px;
         font-size: 20px;
-        position: absolute;
         left: -5px;
         top: 7px;
     }
@@ -2784,12 +2791,45 @@ ol {
     .features-section {
         display: none;
     }
+    .header-top-wrap {
+        display: none;
+    }
+    .header-top {
+        padding: 0;
+    }
+    .header-bottom__nav {
+        display: none;
+    }
+    .logo__item--mobile {
+        display: block;
+    }
+    .burger-button {
+        border: 0;
+        width: 20px;
+    }
+    .burger__text {
+        display: none;
+    }
+    .logo__item--mobile {
+        position: static;
+        margin-bottom: 0;
+        width: 150px;
+    }
+    .site-logo {
+        margin-bottom: 0;
+    }
+    .user-panel {
+        margin-top: 0;
+    }
+    .user-panel .up-item {
+        margin-right: 20px;
+    }
 }
 
 
 /* Medium Mobile :480px. */
 
-@media only screen and (min-width: 576px) and (max-width: 766px) {
+@media only screen and (min-width: 370px) and (max-width: 420px) {
     .hero-slider .slider-nav-warp {
         padding: 0 15px;
     }
@@ -2800,12 +2840,21 @@ ol {
         right: 0;
         top: 0;
     }
+    .user-panel .up-item {
+        margin-right: 20px;
+    }
+    .burger-button {
+        width: 40px;
+    }
+    .product-item {
+        margin-bottom: 20px;
+    }
 }
 
 
 /* Small Mobile :320px. */
 
-@media only screen and (max-width: 479px) {
+@media only screen and (max-width: 369px) {
     .hero-slider .slider-nav-warp {
         max-width: 510px;
         padding: 0 15px;
@@ -2838,6 +2887,18 @@ ol {
     }
     .social-links a span {
         display: none;
+    }
+    .user-panel .up-item {
+        margin-right: 10px;
+    }
+    .logo__item--mobile {
+        width: 130px;
+    }
+    .burger-button {
+        width: 40px;
+    }
+    .product-item {
+        margin-bottom: 20px;
     }
 }
 
