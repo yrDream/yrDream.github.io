@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="zxx">
 
+
 <head>
     <title>Главная</title>
     <meta charset="UTF-8">
@@ -47,9 +48,7 @@
             <div class="header-top-wrap">
                 <div class="container container--header--top">
 
-                    <div class="header-top__help-text">
-                        <a href="#"> помощь покупателям </a>
-                    </div>
+                    
 
                     <div class="logo__item">
                         <a href="./index.html" class="site-logo">
@@ -57,8 +56,27 @@
                         </a>
                     </div>
 
-                    <div class="header-top__help-text">
-                        <a href="tel:88005111252">8 (800) 511-12-52</a>
+                    <form class="header-search-form">
+                        <input type="text" placeholder="Поиск на сайте...">
+                        <button><i class="flaticon-search"></i></button>
+                    </form>
+
+                    <div class="user-panel">
+                        <div class="up-item">
+                            <div class="shopping-card">
+                                <a href=""><i class="flaticon-bag"></i>
+                                        <span>0</span></a>
+                            </div>
+                        </div>
+                        <div class="up-item">
+                            <div class="favorite">
+                                <a href=""><i class="flaticon-heart"></i>
+                                        </a>
+                            </div>
+                        </div>
+                        <div class="up-item">
+                            <a href="#"><i class="flaticon-profile"></i></a>
+                        </div>
                     </div>
 
                 </div>
@@ -101,14 +119,15 @@
                 </div>
 
                 <div class="header-bottom__nav">
-                    <a href="#">Главная</a>
-                    <a href="#">Мужское</a>
-                    <a href="#">Женское</a>
-                    <a href="#">Обувь</a>
+                    <a href="#">Распродажа</a>
+                    <a href="#">Доставка/Самовывоз</a>
+                    <a href="#">Сотрудничество</a>
+                    <a href="#">Контакты</a>
                 </div>
 
 
-                <div class="user-panel">
+                 <div class="user-panel user-panel--mobile">
+                    
                     <div class="up-item">
                         <div class="search">
                             <a href=""><i class="flaticon-search"></i>
@@ -130,7 +149,7 @@
                                     </a>
                         </div>
                     </div>
-                </div>
+                </div> 
 
             </div>
 
@@ -147,7 +166,13 @@
     </header>
     <!-- Header section end -->
 
-
+    <!-- Info section -->
+    <section class="info-section">
+        <div class="section__item">
+            Колл-центр: <a href="tel:+1234567890">+380 71 332 22 22</a> ПН-ВС с 10.00 до 22.00
+        </div>
+    </section>
+    <!-- info section end -->
 
     <!-- Hero section -->
     <section class="hero-section">
@@ -165,11 +190,11 @@
                             <a href="#" class="site-btn sb-white">Добавить в корзину</a> -->
                         </div>
                     </div>
-                    <div class="offer-card text-white">
+                    <!-- <div class="offer-card text-white">
                         <span>От</span>
                         <h2>25₽</h2>
                         <p>Сейчас</p>
-                    </div>
+                    </div> -->
                 </div>
             </div>
             <div class="hs-item set-bg" data-setbg="img/bg-2.jpg">
@@ -185,11 +210,11 @@
                             <a href="#" class="site-btn sb-white">Добавить в корзину</a> -->
                         </div>
                     </div>
-                    <div class="offer-card text-white">
+                    <!-- <div class="offer-card text-white">
                         <span>От</span>
                         <h2>25₽</h2>
                         <p>Сейчас</p>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -203,30 +228,27 @@
 
     <!-- Features section -->
     <section class="features-section">
-        <div class="container-fluid">
+        <div class="container">
             <div class="row">
-                <div class="col-md-4 p-0 feature">
-                    <div class="feature-inner">
-                        <div class="feature-icon">
-                            <img src="img/icons/1.png" alt="#">
-                        </div>
-                        <h2>Безопасная покупка</h2>
+                <div class="col-lg-4 ">
+                    <div class="features__item">
+                        <div class="features__icon"><img src="img/icons/delivery.png" alt=""></div>
+                        <div class="features__title">Доставка на следующий день</div>
+                        <div class="features__text">В Москве и 60 других крупных городах России вы получите свой заказ уже на следующий день! Более подробную информацию об условиях доставки в ваш город можно найти <a href="#">здесь</a>.</div>
                     </div>
                 </div>
-                <div class="col-md-4 p-0 feature">
-                    <div class="feature-inner">
-                        <div class="feature-icon">
-                            <img src="img/icons/2.png" alt="#">
-                        </div>
-                        <h2>Премиальные продукты</h2>
+                <div class="col-lg-4 ">
+                    <div class="features__item">
+                        <div class="features__icon"><img src="img/icons/clothes-hanger.png" alt=""></div>
+                        <div class="features__title">Примерка перед покупкой</div>
+                        <div class="features__text">Интернет-магазин Expressli даёт возможность примерить одежду, обувь и другие товары перед оплатой заказа курьеру. Оплачивайте только то, что вам подошло и понравилось!</div>
                     </div>
                 </div>
-                <div class="col-md-4 p-0 feature">
-                    <div class="feature-inner">
-                        <div class="feature-icon">
-                            <img src="img/icons/3.png" alt="#">
-                        </div>
-                        <h2>Быстрая доставка</h2>
+                <div class="col-lg-4 ">
+                    <div class="features__item">
+                        <div class="features__icon"><img src="img/icons/credit-card.png" alt=""></div>
+                        <div class="features__title">Удобные способы оплаты</div>
+                        <div class="features__text">Вы можете оплатить покупки не только наличными, но и банковской картой. У всех курьеров Expressli при себе есть терминал для оплаты картами.</div>
                     </div>
                 </div>
             </div>

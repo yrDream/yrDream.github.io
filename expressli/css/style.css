@@ -327,8 +327,7 @@ ol {
   Header section
 ---------------------*/
 
-.container--header--top,
-.container--header--bot {
+.container--header--top{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -336,8 +335,11 @@ ol {
 }
 
 .container--header--bot {
-    justify-content: space-around;
+    display: flex;
     padding: 20px 0;
+    align-items: center;
+    position: static;
+    display: flex;
 }
 
 .header-top__help-text a {
@@ -347,7 +349,7 @@ ol {
 }
 
 .header-bottom__nav {
-    margin-left: 100px;
+    margin-left: 200px;
 }
 
 .header-bottom__nav a {
@@ -377,8 +379,6 @@ ol {
 .burger-button {
     display: flex;
     align-items: center;
-    border: 1px solid #282828;
-    border-radius: 10px;
     width: 140px;
 }
 
@@ -397,8 +397,12 @@ ol {
     display: none;
 }
 
+/* .logo__item img{
+max-width: 50%;
+} */
+
 .header-search-form {
-    width: 100%;
+    width: 50%;
     position: relative;
     padding: 0 10px;
 }
@@ -450,6 +454,10 @@ ol {
 
 .user-panel .up-item:last-child {
     margin-right: 0;
+}
+
+.user-panel--mobile{
+    display: none;
 }
 
 .shopping-card {
@@ -844,10 +852,36 @@ ol {
     transform: rotate(30deg);
 }
 
+/* ------------------
+  info section
+---------------------*/
 
+.section__item{
+    text-align: center;
+    font-size: 18px;
+    margin: 5px 0 0 0;
+    padding: 10px 0;
+    box-shadow: 0 -5px 5px -5px #333;
+}
+
+.section__item a{
+    text-decoration: underline;
+    font-weight: 700;
+    color: #000;
+    transition: color .2s ease;
+}
+
+.section__item a:hover{
+    text-decoration: underline;
+    color: #ee5757;
+}
 /* ------------------
   Features section
 ---------------------*/
+
+.features-section{
+    margin-top: 70px;
+}
 
 .feature {
     text-align: center;
@@ -889,6 +923,31 @@ ol {
     display: inline-block;
 }
 
+.features__icon img{
+    display: block;
+margin: 0 auto;
+}
+
+.features__title{
+    margin-top: 20px;
+    font-size: 23px;
+
+}
+
+.features__text a{
+text-decoration: underline;
+color: #333;
+transition: color .2s ease;
+}
+
+.features__text a:hover{
+    color: #E65051;
+ }
+
+.features__text{
+    margin-top: 5px;
+    color: #464646;
+}
 
 /* ----------------------
   Latest product section
@@ -2824,7 +2883,17 @@ ol {
     .user-panel .up-item {
         margin-right: 20px;
     }
+    .user-panel--mobile{
+        display: block;
+    }
+    .section__item{
+        font-size: 11px;
+    }
+    .container--header--bot {
+        justify-content: space-around;
+    }
 }
+
 
 
 /* Medium Mobile :480px. */

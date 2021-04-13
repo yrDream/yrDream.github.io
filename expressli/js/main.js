@@ -29,11 +29,11 @@ $(window).on('load', function() {
     $(window).scroll(function() {
         if ($(this).scrollTop() > 1) {
             header.addClass('header_fixed');
-            headerTop.slideUp()
+            // headerTop.slideUp()
 
         } else {
             header.removeClass('header_fixed');
-            headerTop.slideDown()
+            // headerTop.slideDown()
 
         }
     });
