@@ -327,7 +327,7 @@ ol {
   Header section
 ---------------------*/
 
-.container--header--top{
+.container--header--top {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -356,7 +356,7 @@ ol {
     color: #282828;
     font-size: 20px;
     font-weight: 400;
-    margin-right: 20px;
+    margin-right: 50px;
     transition: color .2s ease;
 }
 
@@ -397,6 +397,7 @@ ol {
     display: none;
 }
 
+
 /* .logo__item img{
 max-width: 50%;
 } */
@@ -431,6 +432,7 @@ max-width: 50%;
 
 .header_fixed {
     position: fixed;
+    top: 0;
     z-index: 100;
     background: rgba(255, 255, 255, 0.8);
     width: 100%;
@@ -456,7 +458,7 @@ max-width: 50%;
     margin-right: 0;
 }
 
-.user-panel--mobile{
+.user-panel--mobile {
     display: none;
 }
 
@@ -677,8 +679,8 @@ max-width: 50%;
 
 .hero-slider .hs-item .offer-card {
     position: absolute;
-    right: 0;
-    top: 141px;
+    right: 5px;
+    top: 71px;
     width: 162px;
     height: 162px;
     border-radius: 50%;
@@ -720,6 +722,16 @@ max-width: 50%;
     text-transform: uppercase;
     line-height: 1;
     font-size: 14px;
+}
+
+.offer-button {
+    position: absolute;
+    right: 0;
+    top: 280px;
+}
+
+.offer-button a {
+    color: #fff;
 }
 
 .hero-slider .slider-nav-warp {
@@ -852,11 +864,12 @@ max-width: 50%;
     transform: rotate(30deg);
 }
 
+
 /* ------------------
   info section
 ---------------------*/
 
-.section__item{
+.section__item {
     text-align: center;
     font-size: 18px;
     margin: 5px 0 0 0;
@@ -864,23 +877,25 @@ max-width: 50%;
     box-shadow: 0 -5px 5px -5px #333;
 }
 
-.section__item a{
+.section__item a {
     text-decoration: underline;
     font-weight: 700;
     color: #000;
     transition: color .2s ease;
 }
 
-.section__item a:hover{
+.section__item a:hover {
     text-decoration: underline;
     color: #ee5757;
 }
+
+
 /* ------------------
   Features section
 ---------------------*/
 
-.features-section{
-    margin-top: 70px;
+.features-section {
+    margin-top: 40px;
 }
 
 .feature {
@@ -923,31 +938,37 @@ max-width: 50%;
     display: inline-block;
 }
 
-.features__icon img{
+.features__icon img {
+    padding: 5px;
     display: block;
-margin: 0 auto;
+    margin: 30px auto 0;
+    max-width: 20%;
+    border: 2px solid rgb(77, 77, 77);
+    border-radius: 100px;
 }
 
-.features__title{
+.features__title {
     margin-top: 20px;
     font-size: 23px;
-
+    text-align: center;
 }
 
-.features__text a{
-text-decoration: underline;
-color: #333;
-transition: color .2s ease;
+.features__text a {
+    text-decoration: underline;
+    color: #333;
+    transition: color .2s ease;
 }
 
-.features__text a:hover{
+.features__text a:hover {
     color: #E65051;
- }
+}
 
-.features__text{
+.features__text {
     margin-top: 5px;
     color: #464646;
+    text-align: center;
 }
+
 
 /* ----------------------
   Latest product section
@@ -2641,6 +2662,9 @@ transition: color .2s ease;
     .container {
         max-width: 1175px;
     }
+    .features__icon img {
+        padding: 20px;
+    }
 }
 
 @media (max-width: 1350px) {
@@ -2672,6 +2696,9 @@ transition: color .2s ease;
     }
     .social-links a {
         margin-right: 20px;
+    }
+    .features__icon img {
+        padding: 20px;
     }
 }
 
@@ -2848,7 +2875,13 @@ transition: color .2s ease;
         margin-top: 70px;
     }
     .features-section {
-        display: none;
+        margin-top: 0px;
+    }
+    .features__title {
+        font-size: 18px;
+    }
+    .features__text {
+        font-size: 12px;
     }
     .header-top-wrap {
         display: none;
@@ -2883,17 +2916,16 @@ transition: color .2s ease;
     .user-panel .up-item {
         margin-right: 20px;
     }
-    .user-panel--mobile{
+    .user-panel--mobile {
         display: block;
     }
-    .section__item{
+    .section__item {
         font-size: 11px;
     }
     .container--header--bot {
         justify-content: space-around;
     }
 }
-
 
 
 /* Medium Mobile :480px. */
